@@ -1,0 +1,10 @@
+.bar {
+  display: flex; align-items: center;
+  padding: 6px 12px; gap: 4px; flex-shrink: 0; min-height: 48px;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+.bar::-webkit-scrollbar { display: none; }
+.group   { display: flex; align-items: center; gap: 2px; }
+.spacer  { flex: 1; }
+.divider { width: 1px; height: 20px; background: var(--border); margin: 0 4px; flex-shrink: 0; }

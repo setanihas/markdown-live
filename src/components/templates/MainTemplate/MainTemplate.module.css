@@ -1,0 +1,12 @@
+.app {
+  display: flex; flex-direction: column;
+  height: 100vh; overflow: hidden;
+  background: var(--bg);
+}
+
+.editor { flex: 1; min-height: 0; display: flex; overflow: hidden; }
+
+@media print {
+  .app > :not(.editor) { display: none !important; }
+  .editor { height: auto; overflow: visible; }
+}

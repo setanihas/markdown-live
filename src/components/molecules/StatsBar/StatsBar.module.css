@@ -1,0 +1,22 @@
+.bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px; height: 34px; flex-shrink: 0;
+  background: var(--surface); border-top: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.stats { display: flex; align-items: center; gap: 4px; }
+
+.right { display: flex; align-items: center; gap: 4px; }
+
+.save {
+  display: flex; align-items: center; gap: 4px;
+  font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+  transition: color .3s;
+}
+.saved   { color: var(--green); }
+.unsaved { color: var(--text-3); }
+
+.hint { font-family: var(--font-sans); font-size: 11px; color: var(--text-3); }
+
+@media (max-width: 600px) { .right { display: none; } }
